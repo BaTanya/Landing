@@ -1,1 +1,93 @@
 @import url(fonts.css);
+
+.form{
+  width: 100%;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/Background.png);
+  background-repeat: no-repeat,no-repeat;
+  background-size: 100%, cover;
+  color: white;
+  font-family: Helvetica-Regular, Helvetica,sans-serif;
+  font-size: 18px;
+}
+.block{
+  width: 950px;
+  margin: 0 auto;
+
+}
+.heading-white{
+  text-align: center;
+  font-family: Raleway-Regular, Arial;
+  font-size: 40pt;
+  margin: 0;
+  color: white;
+  text-transform: uppercase;
+
+}
+.heading-white::after{
+  content: "";
+  display: block;
+  width: 50px;
+  margin: 25px auto 75px;
+  border-bottom-color: #af5c34;
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+}
+
+.left{
+  width: 450px;
+  float: left;
+  height: 500px;
+  padding-right: 30px;
+}
+.input{
+  border: 1px solid #af5c34;
+  width: 90%;
+  margin-top: 20px;
+  padding: 1em;
+  background:rgba(0, 0, 0, 0.3);
+  color: inherit;
+  font-size: inherit;
+  font-family: inherit;
+}
+.right{
+  height: 500px;
+  padding: 20px  0 0 40px;
+}
+.right > p{
+  margin: 0;
+}
+.right span{
+  padding: 25px 0;
+  display: block;
+
+}
+.email::before{
+  content: "";
+  width: 35px;
+  height: 22px;
+  background-image: url(../images/email.png);
+  display: inline-block;
+  position: relative;
+  top: 5px;
+  margin-right: 50px;
+
+}
+
+.input::-moz-placeholder          {color:#ffffff;}/* Firefox 19+ */
+.input::-webkit-input-placeholder {color:#ffffff;}
+.input:-moz-placeholder           {color:#ffffff;}/* Firefox 18- */
+.input:-ms-input-placeholder      {color:#ffffff;}
+
+.footer ul{
+  list-style: none;
+  text-align: center;
+  margin: 0;
+  padding: 10px 0;
+}
+.footer{
+  background-color: #af5c34;
+}
+.footer li {
+  display: inline-block;
+  margin: 0 25px;
+}
